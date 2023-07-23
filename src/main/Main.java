@@ -6,7 +6,11 @@ public class Main{
     public static void main(String[] args){
         System.out.println("Please input: ");
         Scanner scanner = new Scanner(System.in);
-        System.out.println(scanner.nextLine());
+        String input;
+        do {
+            input = scanner.nextLine();
+            System.out.println(input);
+        } while (!input.equals("quit"));
         scanner.close();
     }
 }
